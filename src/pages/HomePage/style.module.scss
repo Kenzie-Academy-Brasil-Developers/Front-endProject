@@ -1,0 +1,69 @@
+
+.h1 {
+    font-family: var(--font-family-League);
+    font-weight: 500;
+    font-size: 4em;
+    color: var(--color-font-homepage);
+
+    @media (max-width: 768px) { 
+        font-size: 3em; 
+    }
+
+    @media (max-width: 576px) { 
+        font-size: 2.5em; 
+    }
+}
+
+.p {
+    font-family: var(--font-family);
+    color: var(--color-font-homepage);
+    font-size: 1.2em; 
+    font-weight: 700;
+    @media (max-width: 768px) { 
+        font-size: 1em; 
+    }
+
+    @media (max-width: 576px) {
+        font-size: 0.9em; 
+    }
+}
+
+
+.divH1Icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.icon{
+    height: 65px;
+    width: 61px;
+    margin-left: 11px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.divMain{
+    background-color: var(--color-div);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    padding: 40px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.divInfo{
+
+}

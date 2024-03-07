@@ -1,0 +1,22 @@
+body{
+    
+    background-image: url(../assets/Ocean.jpg);
+}
+
+:root{
+    --font-family: "Lato", sans-serif;
+    --font-family-League: "League Spartan", sans-serif;
+    --color-div: #2674a880;
+    --color-font-homepage: #051e38;
+    --color-inputs-buttons: #092C48;
+    --color-placeholder-texts-buttons: #ABC4EF;
+    --color-incons: #0F2136;
+    
+    .buttons{
+    font-family: var(--font-family);
+    font-size: 1.875rem;
+    background-color: var(--color-inputs-buttons);
+    color: var(--color-placeholder-texts-buttons);
+}
+}
+
