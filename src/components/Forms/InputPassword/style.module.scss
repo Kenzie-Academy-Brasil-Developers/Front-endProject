@@ -1,0 +1,22 @@
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .form-input {
+        padding-right: 40px; 
+    }
+
+    .icon-button {
+        position: absolute;
+        top: 50%;
+        right: 10px; 
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

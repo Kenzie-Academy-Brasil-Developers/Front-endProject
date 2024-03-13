@@ -20,3 +20,149 @@ body{
 }
 }
 
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-inputs-buttons);
+    color: var(--color-placeholder-texts-buttons);
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: var(--color-font-homepage);
+    }
+  }
+  .form-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid var(--color-inputs-buttons);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--color-inputs-buttons);
+    color: var(--color-placeholder-texts-buttons);
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-inputs-buttons); 
+    }
+
+    &::placeholder{
+        color: #abc4efb4
+    }
+}
+.label {
+    font-size: 1.2rem;
+    color: var(--color-placeholder-texts-buttons);
+    font-weight: bold;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 100%; 
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .formm-input {
+        width: calc(100% - 40px); 
+        padding-right: 40px;
+    }
+
+    .icon-button {
+        position: absolute;
+        color: var(--color-placeholder-texts-buttons);
+        top: 50%;
+        right: 5px; 
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+.div {
+    background-color: var(--color-div);
+    width: 60%;
+    max-width: 400px; 
+    margin: auto; 
+    padding: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.forms {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100%; 
+}}
+.header-title {
+    font-size: 1.5rem;
+    color: var(--color-placeholder-texts-buttons); 
+}
+
+.divContact {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-div);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.contact-actions button:hover {
+    color: var(--color-placeholder-texts-buttons); 
+}
+
+.contact-info p {
+    margin: 5px 0; 
+    font-size: 16px; 
+    color: var(--color-placeholder-texts-buttons); 
+    &:hover{
+        color: var(--color-font-homepage)
+    }
+}
