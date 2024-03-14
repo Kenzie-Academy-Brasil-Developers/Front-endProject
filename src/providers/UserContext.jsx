@@ -77,8 +77,7 @@ export const UserProvider = ({children}) => {
             setUser(user);
             localStorage.setItem("@USERID", user.id)
         } catch (error) {
-            console.error('Erro ao obter informações do cliente:', error);
-            // setUser(null); 
+            toast.warning("Ops! parece que algo deu errado.")
         }
     }
 
@@ -88,6 +87,7 @@ export const UserProvider = ({children}) => {
             await api.post("/client", formData);
             toast.success("Cadastro realizado com sucesso")
             reset()
+            navigate("/");
         } catch (error) {
             if(error.response?.data.message === "Email already exists"){
                 toast.warning("Usuário ja cadastrado");
@@ -105,7 +105,6 @@ export const UserProvider = ({children}) => {
                     Authorization: `Bearer ${token}`
                 }
             })
-            
             navigate("/")
             toast.success("Conta deletada com sucesso")
         } catch (error) {
