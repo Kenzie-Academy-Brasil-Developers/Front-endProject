@@ -40,7 +40,9 @@ export const Dashboard = () => {
                     <button className=" button-link" onClick={handleDeleteUser}> Excluir Conta</button>
                 </div>
             </div>
-            <ContactList />
+            <div className={styles.divContainerContacts}>
+                <ContactList />
+            </div>
         </main>
     )
 }

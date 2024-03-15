@@ -1,0 +1,54 @@
+.card{
+    width: 80%;
+    background-color: var(--color-div);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.divContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.icon{
+    width: 73px;
+    color: var(--color-placeholder-texts-buttons);
+    height: 80px;
+    margin-right: 28px;
+}
+
+.iconEditDelete{
+        width: 20px;
+        color:var(--color-incons) ;
+        height: 20px;
+    &:hover{
+        color: var(--color-placeholder-texts-buttons);
+    }
+}
+
+.p{
+    font-family: var(--font-familly);
+    font-weight: 300;
+    font-size: 1,5rem;
+    color: var(--color-placeholder-texts-buttons);
+    
+}
+
+.pInfo{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-placeholder-texts-buttons);
+}
+
+.divInfo{
+    line-height: 1.5;
+}

@@ -45,7 +45,7 @@
 
 .h1 {
     font-family: var(--font-family-League);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 2em;
     color: var(--color-font-homepage);
 
@@ -84,4 +84,15 @@
 .iconUser {
     width: 44px;
     height: 38px;
+}
+
+
+.divContainerContacts{
+        background-color: var(--color-div);
+        width: 96%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 20px;
+        display: flex;
 }

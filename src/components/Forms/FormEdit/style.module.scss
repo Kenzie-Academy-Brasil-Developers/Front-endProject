@@ -1,0 +1,24 @@
+.divForm {
+    width: 80%; 
+    max-width: 500px; 
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(38, 116, 168, 0.5254901961);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .forms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .divForm {
+      width: 50%; 
+    }
+}
