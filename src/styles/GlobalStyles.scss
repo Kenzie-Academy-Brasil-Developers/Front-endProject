@@ -45,6 +45,7 @@ body{
     font-size: 16px;
     background-color: var(--color-inputs-buttons);
     color: var(--color-placeholder-texts-buttons);
+    margin-bottom: 30px;
 
     &:focus {
       outline: none;

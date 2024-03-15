@@ -109,7 +109,6 @@ export const UserProvider = ({children}) => {
             toast.success("Conta deletada com sucesso")
         } catch (error) {
             toast.warning("Algo deu errado!");
-            console.log(error)
         }
     }
     return(

@@ -1,6 +1,6 @@
 import styles from "./style.module.scss"
 import iconOcen from "../../assets/iconOcen.png"
-// import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 import { LoginForm } from "../../components/Forms/FormLogin";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
@@ -18,14 +18,17 @@ export const HomePage = () => {
                             <h1 className={styles.h1}>Connections</h1>
                         </div>
                     </div>
-                    <div>
+                    <div className={styles.divinfo2}>
                         <div className={styles.divP}>
-                            <p className={styles.p}>Conecte-se ao ProConnections e otimize sua gestão de conexões profissionais. Mantenha suas redes organizadas e alcance novos patamares de eficiência no mundo dos negócios.</p>
+                            <p className={styles.p}>Conecte-se ao Pro Connections e otimize sua gestão de conexões profissionais. Mantenha suas redes organizadas e alcance novos patamares de eficiência no mundo dos negócios.</p>
                         </div>
                         <Link to="/register"  className="button-link">Cadastre-se</Link>
                     </div>
                 </div>
-                <LoginForm />
+                <div className={styles.container}>
+                    <FaUserCircle className={styles.iconlogin}/>
+                    <LoginForm />
+                </div>
             </div>
         </main>
     )
