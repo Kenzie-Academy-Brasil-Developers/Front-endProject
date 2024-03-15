@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: var(--color-div); 
+    background-color: #2674a886; 
     color: #ABC4EF; 
 }
 
@@ -12,4 +12,57 @@
     margin-right: 20px; 
 }
 
+.icon{
+    height: 65px;
+    width: 61px;
+    margin-left: 11px;
+}
 
+.iconUser{
+    width: 44px;
+    height: 38px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.divH1Icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.nameUser{
+    color: var(--color-font-homepage);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.h1 {
+    font-family: var(--font-family-League);
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--color-font-homepage);
+
+    @media (max-width: 768px) { 
+        font-size: 3em; 
+    }
+
+    @media (max-width: 576px) { 
+        font-size: 2.5em; 
+    }
+}
+
+.divHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}

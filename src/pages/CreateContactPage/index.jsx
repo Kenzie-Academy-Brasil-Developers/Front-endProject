@@ -1,12 +1,11 @@
 import { MdArrowBack } from "react-icons/md"
 import { Link } from "react-router-dom"
 import { CreateContactForm } from "../../components/Forms/FormContact"
-
+import styles from "./style.module.scss"
 export const CreateContactPage = () => {
     return(
-        <main>
-            <Link className="button-link" to="/Dashboard"><MdArrowBack/> voltar</Link>
-            <h1  className="header-title">Contato</h1>
+        <main className={styles.mainContainer}>
+            <Link className={styles.buttonlink} to="/Dashboard"><MdArrowBack/> voltar</Link>
             <CreateContactForm />
         </main>
     )
