@@ -29,24 +29,28 @@ body{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
     transition: background-color 0.3s ease;
-  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     &:hover {
       background-color: var(--color-font-homepage);
     }
-  }
-  .form-input {
+}
+
+.form-input {
     display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px; 
+    width: 91%;
+    padding: 12px;
+    margin-bottom: 25px;
     border: 1px solid var(--color-inputs-buttons);
     border-radius: 5px;
     font-size: 16px;
     background-color: var(--color-inputs-buttons);
     color: var(--color-placeholder-texts-buttons);
-    margin-bottom: 30px;
-
+    margin-top: 10px;
     &:focus {
       outline: none;
       border-color: var(--color-inputs-buttons); 
@@ -60,12 +64,13 @@ body{
     font-size: 1.2rem;
     color: var(--color-placeholder-texts-buttons);
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .formulario {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 0 20px; 
+    // max-width: 400px;
+    // margin: 0 auto;
+    // padding: 0 20px; 
 }
 .input-container {
     position: relative;
@@ -76,43 +81,53 @@ body{
         position: relative;
     }
 
-    .formm-input {
-        width: calc(100% - 40px); 
-        padding-right: 40px;
-    }
+    // .formm-input {
+    //     width: calc(100% - 40px); 
+    //     padding-right: 40px;
+    // }
 
     .icon-button {
         position: absolute;
-        color: var(--color-placeholder-texts-buttons);
-        top: 50%;
-        right: 5px; 
-        transform: translateY(-50%);
-        background: transparent;
-        border: none;
-        cursor: pointer;
+    color: var(--color-placeholder-texts-buttons);
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
     }
 }
 .div {
     background-color: var(--color-div);
     width: 60%;
-    max-width: 400px; 
-    margin: auto; 
-    padding: 50px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
+    max-width: 400px;
+    margin: auto;
+    // padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .button-container {
+    margin: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+
 }
 
+
 .forms {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    width:  80%;
+    // max-width: 400px;
+    // margin: 0 auto;
+    // padding: 20px;
 
     @media screen and (max-width: 768px) {
         max-width: 100%; 
