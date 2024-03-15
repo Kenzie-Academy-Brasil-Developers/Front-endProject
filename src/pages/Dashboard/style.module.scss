@@ -1,10 +1,19 @@
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
     background-color: #2674a886; 
     color: #ABC4EF; 
+
+    @media (min-width: 576px) {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+.title {
+    margin-left: 20px;
 }
 
 .headertitle {
@@ -12,16 +21,7 @@
     margin-right: 20px; 
 }
 
-.icon{
-    height: 65px;
-    width: 61px;
-    margin-left: 11px;
-}
 
-.iconUser{
-    width: 44px;
-    height: 38px;
-}
 .title{
     display: flex;
     flex-direction: column;
@@ -29,12 +29,7 @@
     flex-wrap: wrap;
     margin-left: 20px;
 }
-.divH1Icon{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-}
+
 .nameUser{
     color: var(--color-font-homepage);
     font-family: var(--font-family);
@@ -43,6 +38,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 576px) {
+        font-size: 16px; 
+    }
 }
 
 .h1 {
@@ -65,4 +63,25 @@
     flex-direction: row;
     align-items: center;
     padding: 20px;
+
+}
+
+
+
+.divH1Icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.icon {
+    height: 65px;
+    width: 61px;
+    margin-left: 11px;
+}
+
+
+.iconUser {
+    width: 44px;
+    height: 38px;
 }
